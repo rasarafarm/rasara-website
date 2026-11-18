@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183D32">
+  <meta name="description" content="RASARA menyediakan ayam hidup, bebek hidup, telur bebek, serta layanan pemotongan dan pembersihan ayam di Bojong, Pekalongan.">
+  <meta name="application-name" content="RASARA">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183D32">
+  <meta name="description" content="RASARA adalah mitra kebutuhan ayam, bebek, telur bebek, serta layanan pemotongan dan pembersihan ayam untuk rumah tangga dan usaha kuliner.">
+  <title>RASARA — Mitra Kebutuhan Unggas dan Telur Anda</title>
+  <link rel="icon" href="_assets/MAHbRwcS8zM/1">
+  <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22RASARA%22%2C%22short_name%22%3A%22RASARA%22%2C%22description%22%3A%22Mitra%20Kebutuhan%20Unggas%20dan%20Telur%20Anda.%22%2C%22start_url%22%3A%22.%2F%22%2C%22scope%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22theme_color%22%3A%22%23183D32%22%2C%22background_color%22%3A%22%23F3EEDF%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22_assets%2FMAHbRwcS8zM%2F1%22%2C%22sizes%22%3A%22any%22%2C%22type%22%3A%22image%2Fpng%22%2C%22purpose%22%3A%22any%22%7D%5D%7D">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root{--forest:#183D32;--sage:#A7B9A1;--cream:#F3EEDF;--lime:#D5DFA1;--white:#FFFFFF;--muted:#61766b}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:88px}
+    body{margin:0;background:var(--cream);color:var(--forest);font-family:"DM Sans",sans-serif;line-height:1.6}
+    button,input{font-family:"DM Sans",sans-serif}
+    button,a{-webkit-tap-highlight-color:transparent}
+    a{color:inherit;text-decoration:none}
+    :focus-visible{outline:3px solid #7c995b;outline-offset:4px}
+    img{display:block;max-width:100%}
+    .wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(243,238,223,.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(24,61,50,.1)}
+    .header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}
+    .brand img{width:53px;height:53px;border-radius:12px;object-fit:contain;background:#faf6ef}
+    .brand-name{font:800 21px/1 "Manrope",sans-serif;letter-spacing:-.06em}
+    .brand-sub{display:block;font-size:9px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;margin-top:5px}
+    .desktop-nav{display:flex;align-items:center;gap:27px}
+    .desktop-nav a{font-size:12px;font-weight:800;letter-spacing:.08em;white-space:nowrap}
+    .desktop-nav a:hover,.footer-links a:hover{opacity:.6}
+    .header-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:100px;font-weight:800;transition:transform .2s,background .2s;cursor:pointer}
+    .header-cta:hover,.btn:hover{transform:translateY(-2px)}
+    .header-cta{background:var(--forest);color:white;padding:11px 18px;font-size:12px;white-space:nowrap}
+    .header-cta svg,.btn svg{width:17px;height:17px}
+    .menu-toggle{display:none;background:none;border:0;color:var(--forest);padding:9px;cursor:pointer}
+    .mobile-nav{display:none}
+    .eyebrow{font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+    .eyebrow:before{content:"";width:28px;height:1px;background:currentColor}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:"Manrope",sans-serif}
+    h1{font-size:clamp(42px,5.7vw,82px);letter-spacing:-.065em;line-height:1.09;font-weight:800;margin-bottom:25px}
+    h2{font-size:clamp(32px,4vw,56px);letter-spacing:-.055em;line-height:1.16;margin-bottom:18px}
+    h3{font-size:22px;letter-spacing:-.04em;line-height:1.25}
+    .hero{padding:58px 0 88px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:6%}
+    .hero-copy{padding:35px 0}
+    .hero-copy .eyebrow{margin-bottom:26px}
+    .hero-copy p{font-size:17px;max-width:580px;color:#506a5d;line-height:1.8}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+    .btn{padding:15px 24px;border:1px solid transparent;font-size:13px;min-height:50px}
+    .btn-dark{background:var(--forest);color:white}
+    .btn-dark:hover{background:#285a48}
+    .btn-outline{border-color:var(--forest);background:transparent;color:var(--forest)}
+    .btn-lime{background:var(--lime);color:var(--forest)}
+    .hero-visual{position:relative;min-height:550px}
+    .hero-photo{width:87%;height:510px;object-fit:cover;border-radius:180px 180px 20px 20px;margin-left:auto}
+    .hero-stamp{position:absolute;left:0;bottom:17px;width:175px;height:175px;border-radius:50%;background:var(--lime);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transform:rotate(-10deg);box-shadow:0 14px 35px #183d3220}
+    .hero-stamp strong{font:800 22px/1.15 "Manrope",sans-serif;letter-spacing:-.05em}
+    .hero-stamp span{font-size:11px;font-weight:700;letter-spacing:.12em;margin-top:8px;text-transform:uppercase}
+    .intro-strip{background:var(--forest);color:white;padding:29px 0}
+    .intro-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .intro-inner p{margin:0;max-width:650px;font-size:15px}
+    .intro-kicker{color:var(--lime);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+    section.block{padding:110px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:37px}
+    .section-head .eyebrow{margin-bottom:18px}
+    .section-head p{max-width:430px;color:var(--muted);margin:0}
+    .products{background:#faf8f1}
+    .product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+    .product-card{background:white;border-radius:22px;overflow:hidden;display:flex;flex-direction:column;border:1px solid #e8e9dd;transition:transform .2s,box-shadow .2s}
+    .product-card:hover{transform:translateY(-4px);box-shadow:0 17px 40px #183d3212}
+    .product-image{width:100%;height:250px;object-fit:cover}
+    .product-body{padding:22px;display:flex;flex-direction:column;flex:1}
+    .status{align-self:flex-start;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.09em;background:#ecf2e2;padding:6px 10px;border-radius:50px;margin-bottom:15px}
+    .status.soon{background:var(--cream)}
+    .product-body h3{margin-bottom:9px}
+    .product-body p{color:var(--muted);font-size:13px;line-height:1.7;flex:1;margin-bottom:24px}
+    .text-link{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800}
+    .text-link svg{width:16px;height:16px}
+    .services{background:var(--cream)}
+    .service-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:8%;align-items:center}
+    .service-photo-wrap{position:relative}
+    .service-photo{width:100%;height:570px;object-fit:cover;border-radius:22px 180px 22px 22px}
+    .service-photo-note{position:absolute;bottom:18px;left:18px;background:var(--white);padding:12px 17px;border-radius:12px;font-size:11px;font-weight:700}
+    .service-content .eyebrow{margin-bottom:20px}
+    .service-content>p{color:var(--muted);margin-bottom:27px}
+    .service-list{display:grid;gap:12px;margin:28px 0}
+    .service-item{display:flex;align-items:center;justify-content:space-between;gap:14px;background:white;border-radius:15px;padding:17px 18px}
+    .service-item strong{font-size:14px}
+    .service-item a{width:37px;height:37px;flex:none;border-radius:50%;background:var(--lime);display:grid;place-items:center}
+    .service-item a svg{width:17px;height:17px}
+    .service-actions{display:flex;flex-wrap:wrap;gap:10px}
+    .why{background:var(--forest);color:white}
+    .why .eyebrow{color:var(--lime);margin-bottom:18px}
+    .why-grid{display:grid;grid-template-columns:1.15fr repeat(3,1fr);gap:30px;align-items:start}
+    .why-grid h2{margin-bottom:0}
+    .why-card{border-top:1px solid #71887b;padding-top:20px}
+    .why-card svg{width:25px;height:25px;color:var(--lime);margin-bottom:23px}
+    .why-card h3{font-size:17px;margin-bottom:10px}
+    .why-card p{font-size:13px;color:#d0dfd5;margin:0}
+    .about{background:#faf8f1}
+    .about-top{display:grid;grid-template-columns:1fr 1fr;gap:8%;margin-bottom:45px}
+    .about-top .eyebrow{margin-bottom:20px}
+    .about-top p{color:var(--muted);line-height:1.85}
+    .about-panels{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .about-panel{padding:28px;background:var(--cream);border-radius:19px;min-height:195px}
+    .about-panel:nth-child(2){background:#e8eee2}
+    .about-panel:nth-child(3){background:var(--lime)}
+    .about-panel .num{font-size:11px;font-weight:800;letter-spacing:.15em;opacity:.6;margin-bottom:25px}
+    .about-panel h3{font-size:19px;margin-bottom:10px}
+    .about-panel p{font-size:13px;margin:0;line-height:1.7}
+    .contact{background:var(--cream)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:start}
+    .contact .eyebrow{margin-bottom:18px}
+    .contact-lead{color:var(--muted);max-width:460px}
+    .contact-card{background:var(--forest);color:white;border-radius:25px;padding:35px}
+    .contact-card>span{color:var(--lime);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+    .contact-number{font:800 clamp(25px,3vw,39px)/1.2 "Manrope",sans-serif;letter-spacing:-.05em;margin:17px 0 26px;display:block}
+    .contact-card .btn{width:100%}
+    .placeholder-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+    .placeholder{background:#fff;border-radius:13px;padding:16px;min-height:100px}
+    .placeholder small{display:block;color:var(--muted);font-size:11px;font-weight:700;margin-bottom:7px}
+    .placeholder strong{font-size:13px;line-height:1.4;display:block}
+    .guide{background:#e8eee2;padding:60px 0}
+    .guide-inner{display:grid;grid-template-columns:.75fr 1.25fr;gap:8%}
+    .guide .eyebrow{margin-bottom:15px}
+    .guide h2{font-size:36px}
+    .guide details{border-top:1px solid #b7c7b5;padding:16px 0}
+    .guide details:last-child{border-bottom:1px solid #b7c7b5}
+    .guide summary{cursor:pointer;font-weight:800;font-size:14px}
+    .guide details p,.guide details li{font-size:13px;color:#4c6658;line-height:1.75}
+    .guide code{background:#fff;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}
+    .guide button{border:0;background:var(--forest);color:#fff;border-radius:9px;padding:10px 14px;font-weight:700;cursor:pointer}
+    .install-box{display:none;margin-top:17px;padding:16px;background:white;border-radius:12px;font-size:13px}
+    .install-box.show{display:block}
+    .install-box button{margin-top:9px}
+    .site-footer{background:var(--forest);color:white;padding:38px 0}
+    .footer-inner{display:flex;justify-content:space-between;gap:24px;align-items:center}
+    .footer-inner p{font-size:12px;color:#cad9ce;margin:7px 0 0}
+    .footer-links{display:flex;gap:20px;flex-wrap:wrap;font-size:11px;font-weight:700}
+    @media(max-width:1050px){.desktop-nav{gap:14px}.desktop-nav a{font-size:10px}.product-grid{grid-template-columns:repeat(2,1fr)}.why-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:760px){.wrap{width:min(100% - 36px,560px)}.header-inner{min-height:68px}.brand img{width:44px;height:44px}.brand-name{font-size:19px}.desktop-nav,.header-cta{display:none}.menu-toggle{display:block}.mobile-nav.open{display:flex;flex-direction:column;padding:4px 18px 20px;gap:2px;border-top:1px solid #d9dfd0}.mobile-nav a{padding:11px 3px;font-size:13px;font-weight:800}.hero{padding:32px 0 58px}.hero-grid,.service-layout,.about-top,.contact-grid,.guide-inner{grid-template-columns:1fr}.hero-copy{padding:10px 0}.hero-copy p{font-size:15px}.hero-visual{min-height:0;margin-top:26px}.hero-photo{height:360px;width:91%}.hero-stamp{width:125px;height:125px;bottom:-18px}.hero-stamp strong{font-size:16px}.hero-stamp span{font-size:8px}.intro-inner{align-items:start;flex-direction:column;gap:9px}.intro-inner p{font-size:13px}section.block{padding:72px 0}.section-head{display:block}.section-head p{margin-top:15px}.product-grid{gap:12px}.product-image{height:190px}.product-body{padding:16px}.product-body h3{font-size:18px}.product-body p{font-size:12px}.service-photo{height:360px}.service-content{margin-top:34px}.why-grid{gap:28px}.about-top{gap:10px}.about-panels{grid-template-columns:1fr}.about-panel{min-height:0}.contact-card{padding:27px;margin-top:12px}.guide{padding:65px 0}.guide-inner{gap:15px}.footer-inner{align-items:start;flex-direction:column}}
+    @media(max-width:480px){.product-grid{grid-template-columns:1fr}.product-image{height:270px}.why-grid{grid-template-columns:1fr}.placeholder-list{grid-template-columns:1fr 1fr}.hero-actions .btn{flex:1;padding-inline:13px}.service-actions .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
+ </head>
+ <body>
+  <header class="site-header canva-header">
+   <div class="wrap header-inner"><a class="brand canva-link" href="#home" aria-label="RASARA, kembali ke Home"> <img id="rasara-logo" class="canva-image" src="assets/rasara-logo.png" alt="Logo RASARA bergambar unggas dan telur dalam bingkai oval hijau" loading="lazy"> <span><span class="brand-name">RASARA</span><span class="brand-sub">Poultry · Eggs · Food</span></span> </a>
+    <nav class="desktop-nav canva-menu" aria-label="Navigasi utama"><a href="#home">HOME</a><a href="#produk">PRODUK</a><a href="#layanan">LAYANAN</a><a href="#tentang">TENTANG KAMI</a><a href="#kontak">KONTAK</a>
+    </nav><a class="header-cta canva-button" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20produk%20dan%20layanan.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle"></i> Hubungi RASARA</a> <button id="menu-toggle" class="menu-toggle canva-button" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-nav"><i data-lucide="menu"></i></button>
+   </div>
+   <nav id="mobile-nav" class="mobile-nav canva-menu" aria-label="Navigasi ponsel"><a href="#home">HOME</a><a href="#produk">PRODUK</a><a href="#layanan">LAYANAN</a><a href="#tentang">TENTANG KAMI</a><a href="#kontak">KONTAK</a>
+   </nav>
+  </header>
+  <main>
+   <section id="home" class="hero canva-section">
+    <div class="wrap hero-grid">
+     <div class="hero-copy">
+      <div class="eyebrow canva-text">
+       Usaha keluarga · Kebutuhan unggas
+      </div>
+      <h1>RASARA — Mitra Kebutuhan Unggas dan Telur Anda.</h1>
+      <p>Menyediakan kebutuhan ayam, bebek, telur, serta layanan pemotongan dan pembersihan unggas untuk kebutuhan rumah tangga maupun usaha kuliner.</p>
+      <div class="hero-actions"><a class="btn btn-dark canva-button" href="#produk">Lihat Produk <i data-lucide="arrow-up-right"></i></a> <a class="btn btn-outline canva-button" href="#kontak">Hubungi Kami <i data-lucide="arrow-right"></i></a>
+      </div>
+     </div>
+     <div class="hero-visual"><img id="hero-ducks-image" class="hero-photo canva-image" src="https://images.pexels.com/photos/12244481/pexels-photo-12244481.jpeg" alt="Several domestic ducks near a pond, enjoying a natural habitat outdoors." loading="lazy">
+      <div class="hero-stamp canva-tag">
+       <strong>Dari usaha<br>
+         keluarga</strong><span>Untuk kebutuhan Anda</span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div class="intro-strip canva-banner">
+    <div class="wrap intro-inner">
+     <span class="intro-kicker">Kenali RASARA</span>
+     <p>Dari unggas hidup dan telur bebek hingga layanan ayam siap dimasak, RASARA menghubungkan kebutuhan rumah tangga, pedagang, dan pelaku usaha kuliner dalam satu tempat.</p>
+    </div>
+   </div>
+   <section id="produk" class="block products canva-section">
+    <div class="wrap">
+     <div class="section-head">
+      <div>
+       <div class="eyebrow canva-text">
+        01 / Produk kami
+       </div>
+       <h2>Pilihan untuk setiap<br>
+         kebutuhan Anda.</h2>
+      </div>
+      <p>Jelajahi kategori produk RASARA. Hubungi kami untuk menanyakan harga dan ketersediaan sesuai kebutuhan Anda.</p>
+     </div>
+     <div class="product-grid">
+      <article class="product-card canva-card"><img id="ayam-hidup-image" class="product-image canva-image" src="https://images.pexels.com/photos/37678696/pexels-photo-37678696.jpeg" alt="Portrait of a brown hen on a sunny farm, showcasing its vibrant feathers and curious expression." loading="lazy">
+       <div class="product-body">
+        <span class="status canva-tag">Tanyakan ketersediaan</span>
+        <h3>Ayam Hidup</h3>
+        <p>Ayam hidup untuk kebutuhan konsumsi, pedagang, dan usaha kuliner.</p><a class="text-link canva-link" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20Ayam%20Hidup.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer">Pesan via WhatsApp <i data-lucide="arrow-up-right"></i></a>
+       </div>
+      </article>
+      <article class="product-card canva-card"><img id="bebek-hidup-image" class="product-image canva-image" src="https://images.pexels.com/photos/16901775/pexels-photo-16901775.jpeg" alt="Close-up of domestic ducks in a rural farm setting in Sadiqabad, Punjab, Pakistan." loading="lazy">
+       <div class="product-body">
+        <span class="status canva-tag">Tanyakan ketersediaan</span>
+        <h3>Bebek Hidup</h3>
+        <p>Bebek hidup untuk kebutuhan konsumsi dan usaha kuliner.</p><a class="text-link canva-link" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20Bebek%20Hidup.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer">Pesan via WhatsApp <i data-lucide="arrow-up-right"></i></a>
+       </div>
+      </article>
+      <article class="product-card canva-card"><img id="telur-bebek-image" class="product-image canva-image" src="https://images.pexels.com/photos/28572615/pexels-photo-28572615.jpeg" alt="A vibrant scene at a traditional market in West Java, Indonesia showcasing duck eggs." loading="lazy">
+       <div class="product-body">
+        <span class="status canva-tag">Tanyakan ketersediaan</span>
+        <h3>Telur Bebek Mentah</h3>
+        <p>Telur bebek untuk konsumsi, memasak, dan bahan baku olahan makanan.</p><a class="text-link canva-link" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20Telur%20Bebek%20Mentah.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer">Pesan via WhatsApp <i data-lucide="arrow-up-right"></i></a>
+       </div>
+      </article>
+      <article class="product-card canva-card"><img id="telur-asin-image" class="product-image canva-image" src="https://images.pexels.com/photos/32701556/pexels-photo-32701556.jpeg" alt="Variety of eggs displayed in woven baskets in outdoor market setting." loading="lazy">
+       <div class="product-body">
+        <span class="status soon canva-tag">Segera Hadir</span>
+        <h3>Telur Asin Bebek</h3>
+        <p>Produk olahan telur bebek dengan cita rasa khas.</p><a class="text-link canva-link" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20Telur%20Asin%20Bebek.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer">Tanya via WhatsApp <i data-lucide="arrow-up-right"></i></a>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="layanan" class="block services canva-section">
+    <div class="wrap service-layout">
+     <div class="service-photo-wrap">
+      <img id="layanan-image" class="service-photo canva-image" src="https://images.pexels.com/photos/39185940/pexels-photo-39185940.jpeg" alt="A chef skillfully preparing a raw chicken on a wooden cutting board surrounded by fresh herbs and vegetables." loading="lazy">
+      <div class="service-photo-note canva-tag">
+       Foto ilustrasi layanan
+      </div>
+     </div>
+     <div class="service-content">
+      <div class="eyebrow canva-text">
+       02 / Layanan kami
+      </div>
+      <h2>Lebih Praktis, Lebih Siap Diolah.</h2>
+      <p>Selain menyediakan unggas hidup, RASARA menawarkan layanan penanganan ayam agar lebih praktis untuk kebutuhan dapur rumah maupun usaha.</p>
+      <div class="service-list">
+       <div class="service-item canva-card">
+        <strong>Jasa pemotongan ayam</strong><a class="canva-button" aria-label="Tanya jasa pemotongan ayam melalui WhatsApp" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20Jasa%20Pemotongan%20Ayam.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer"><i data-lucide="arrow-up-right"></i></a>
+       </div>
+       <div class="service-item canva-card">
+        <strong>Pembersihan bulu ayam</strong><a class="canva-button" aria-label="Tanya pembersihan bulu ayam melalui WhatsApp" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20Pembersihan%20Bulu%20Ayam.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer"><i data-lucide="arrow-up-right"></i></a>
+       </div>
+       <div class="service-item canva-card">
+        <strong>Penyiapan ayam hingga siap dimasak</strong><a class="canva-button" aria-label="Tanya penyiapan ayam siap dimasak melalui WhatsApp" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20Penyiapan%20Ayam%20hingga%20Siap%20Dimasak.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer"><i data-lucide="arrow-up-right"></i></a>
+       </div>
+      </div>
+      <div class="service-actions">
+       <a class="btn btn-dark canva-button" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20Layanan%20Pemotongan%20dan%20Pembersihan%20Ayam.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle"></i> Konsultasi via WhatsApp</a><a class="btn btn-outline canva-button" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20Layanan%20Ayam%20Siap%20Dimasak.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer">Pesan layanan</a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="block why canva-section" aria-labelledby="why-title">
+    <div class="wrap why-grid">
+     <div>
+      <div class="eyebrow canva-text">
+       Mengapa RASARA
+      </div>
+      <h2 id="why-title">Dekat dengan kebutuhan Anda.</h2>
+     </div>
+     <div class="why-card canva-card">
+      <i data-lucide="layers-3"></i>
+      <h3>Beragam kebutuhan</h3>
+      <p>Ayam, bebek, telur bebek, dan layanan penanganan ayam dalam satu usaha.</p>
+     </div>
+     <div class="why-card canva-card">
+      <i data-lucide="users"></i>
+      <h3>Untuk banyak pelanggan</h3>
+      <p>Melayani kebutuhan rumah tangga, pedagang, warung makan, restoran, serta pembelian eceran dan grosir.</p>
+     </div>
+     <div class="why-card canva-card">
+      <i data-lucide="message-circle"></i>
+      <h3>Mudah dihubungi</h3>
+      <p>Tanyakan kebutuhan, harga, dan ketersediaan langsung melalui WhatsApp.</p>
+     </div>
+    </div>
+   </section>
+   <section id="tentang" class="block about canva-section">
+    <div class="wrap">
+     <div class="about-top">
+      <div>
+       <div class="eyebrow canva-text">
+        03 / Tentang kami
+       </div>
+       <h2>Berawal dari Usaha Keluarga, Bertumbuh untuk Melayani Lebih Banyak Kebutuhan.</h2>
+      </div>
+      <div>
+       <p>RASARA adalah usaha keluarga yang bergerak dalam penjualan ayam hidup dan bebek hidup. Seiring berkembangnya kebutuhan pelanggan, kegiatan usaha juga mencakup jasa pemotongan serta pembersihan ayam hingga siap dimasak.</p>
+       <p>Melalui unit peternakan bebek petelur, RASARA menyediakan telur bebek mentah dan tengah mengembangkan produk telur asin bebek. Setiap unit usaha diarahkan untuk membantu kebutuhan rumah tangga, pedagang, dan pelaku kuliner dengan cara yang mudah diakses.</p>
+      </div>
+     </div>
+     <div class="about-panels">
+      <article class="about-panel canva-card">
+       <div class="num">
+        01 / VISI
+       </div>
+       <h3>Mitra kebutuhan sehari-hari</h3>
+       <p>Menjadi mitra yang dekat dengan kebutuhan unggas, telur, dan pangan pelanggan.</p>
+      </article>
+      <article class="about-panel canva-card">
+       <div class="num">
+        02 / MISI
+       </div>
+       <h3>Terus mengembangkan layanan</h3>
+       <p>Menyediakan pilihan produk dan layanan yang relevan bagi rumah tangga maupun usaha kuliner.</p>
+      </article>
+      <article class="about-panel canva-card">
+       <div class="num">
+        03 / NILAI
+       </div>
+       <h3>Pelayanan yang terbuka</h3>
+       <p>Mendengarkan kebutuhan pelanggan dan memudahkan komunikasi sebelum pemesanan.</p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="kontak" class="block contact canva-section">
+    <div class="wrap contact-grid">
+     <div>
+      <div class="eyebrow canva-text">
+       04 / Kontak
+      </div>
+      <h2>Mari bicarakan kebutuhan Anda.</h2>
+      <p class="contact-lead">Untuk pertanyaan produk, layanan, harga, atau ketersediaan, hubungi RASARA melalui WhatsApp. Kami siap menerima pertanyaan dari pelanggan eceran maupun grosir.</p>
+      <div class="placeholder-list">
+       <div class="placeholder canva-card">
+        <small>Lokasi usaha</small><strong>Jl. Wiroditan, Kecamatan Bojong, Kabupaten Pekalongan, Jawa Tengah</strong>
+       </div>
+       <div class="placeholder canva-card">
+        <small>Google Maps</small><strong><a href="https://www.google.com/maps/place/Telur+Bebek+Orange+Fresh+%E2%80%94+RASARA+FARM/@-6.9553287,109.6132336,18.5z/data=!4m6!3m5!1s0x2e70210028fff7a9:0xbdad3fd626f522a2!8m2!3d-6.9553874!4d109.6141583!16s%2Fg%2F11zyjr9lmb" target="_blank" rel="noopener noreferrer">Telur Bebek Orange Fresh — RASARA FARM ↗</a></strong>
+       </div>
+       <div class="placeholder canva-card">
+        <small>Facebook</small><strong><a href="https://www.facebook.com/share/1FKGBEgPpB/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Cari Ra Sara di Facebook ↗</a></strong>
+       </div>
+       <div class="placeholder canva-card">
+        <small>Jam operasional</small><strong>Silakan konfirmasi melalui WhatsApp</strong>
+       </div>
+      </div>
+     </div>
+     <div class="contact-card canva-card">
+      <span>Saluran utama</span><a class="contact-number canva-link" href="https://wa.me/6285701393008" target="_blank" rel="noopener noreferrer">+6285701393008</a>
+      <p>Mulai percakapan untuk menanyakan produk atau layanan yang Anda butuhkan.</p><a class="btn btn-lime canva-button" href="https://wa.me/6285701393008?text=Halo%20RASARA%2C%20saya%20ingin%20bertanya%20mengenai%20produk%20dan%20layanan.%20Mohon%20informasi%20harga%20dan%20ketersediaannya.%20Terima%20kasih." target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle"></i> Buka WhatsApp</a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer canva-footer">
+   <div class="wrap footer-inner">
+    <div>
+     <strong class="brand-name">RASARA</strong>
+     <p>Mitra Kebutuhan Unggas dan Telur Anda.</p>
+    </div>
+    <nav class="footer-links canva-menu" aria-label="Navigasi bawah">
+     <a href="#home">Home</a><a href="#produk">Produk</a><a href="#layanan">Layanan</a><a href="#tentang">Tentang Kami</a><a href="#kontak">Kontak</a>
+    </nav>
+   </div>
+  </footer>
+  <script>
+    if (window.lucide) lucide.createIcons();
+
+    const menuButton = document.getElementById('menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    menuButton.addEventListener('click', () => {
+      const open = mobileNav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
+    });
+    mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', 'Buka menu');
+    }));
+
+    if ('serviceWorker' in navigator && window.isSecureContext && location.protocol !== 'blob:') {
+      navigator.serviceWorker.register('./sw.js').catch(() => {
+        /* Berkas sw.js disediakan saat publikasi; halaman tetap berfungsi tanpanya. */
+      });
+    }
+  </script>
+ </body>
+</html>
